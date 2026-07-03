@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Message for You</title>
+    <meta name="description" content="A beautiful, emotional apology website made with vanilla HTML, CSS, and JavaScript." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-orb orb-one"></div>
+    <div class="background-orb orb-two"></div>
+    <div class="floating-hearts" aria-hidden="true"></div>
+    <div class="petals-layer" aria-hidden="true"></div>
+    <div class="sparkles" aria-hidden="true"></div>
+
+    <div class="app-shell">
+      <header class="top-bar">
+        <button id="musicToggle" class="music-btn" type="button" aria-label="Play romantic background music">
+          ♫ Play Music
+        </button>
+        <div class="timer-card">
+          <span class="timer-label">Since May 9, 11:30 AM</span>
+          <strong id="timerValue">0d 0h 0m 0s</strong>
+        </div>
+      </header>
+
+      <main class="stage">
+        <section class="page active" id="landing">
+          <div class="card landing-card">
+            <p class="eyebrow">A MESSAGE FOR YOU ❤️</p>
+            <h1>My Wife ❤️</h1>
+            <p class="subtitle">
+              There are things I should have said much earlier.
+              This is my heart speaking...
+            </p>
+            <button class="primary-btn" data-next="page1" type="button">❤️ Read My Heart</button>
+          </div>
+        </section>
+
+        <section class="page" id="page1">
+          <div class="card content-card">
+            <p class="eyebrow">Page 1</p>
+            <h2>It's My Fault</h2>
+            <div class="message type-text" data-text="Mrs.H ma
+
+I know I hurt you ma.
+
+I know how much pain I caused you ma.
+It was completely my mistake ma.
+
+I never wanted to become the reason for your tears ma."></div>
+            <button class="primary-btn" data-next="page2" type="button">Continue ❤️</button>
+          </div>
+        </section>
+
+        <section class="page" id="page2">
+          <div class="card content-card">
+            <p class="eyebrow">Page 2</p>
+            <h2>I Miss You</h2>
+            <div class="message type-text" data-text="I miss our conversations ma.
+
+I miss your smile ma.
+
+I miss the happiness we shared together ma.
+
+Every day without you feels incomplete ma."></div>
+            <button class="primary-btn" data-next="page3" type="button">Continue ❤️</button>
+          </div>
+        </section>
+
+        <section class="page" id="page3">
+          <div class="card content-card">
+            <p class="eyebrow">Page 3</p>
+            <h2>I Need The Old Us Back</h2>
+            <div class="message type-text" data-text="I miss the way we used to laugh ma.
+
+I miss talking to you ma.
+
+I miss being close to you ma.
+
+Please come back ma."></div>
+            <button class="primary-btn" data-next="page4" type="button">Continue ❤️</button>
+          </div>
+        </section>
+
+        <section class="page" id="page4">
+          <div class="card content-card">
+            <p class="eyebrow">Page 4</p>
+            <h2>My Promise</h2>
+            <div class="message type-text" data-text="I can't change the past ma.
+
+But I promise to become a better person ma.
+
+I promise to understand you more ma.
+
+I promise to protect your heart instead of hurting it ma."></div>
+            <button class="primary-btn" data-next="page5" type="button">Continue ❤️</button>
+          </div>
+        </section>
+
+        <section class="page" id="page5">
+          <div class="card content-card">
+            <p class="eyebrow">Page 5</p>
+            <h2>One Last Chance</h2>
+            <div class="message type-text" data-text="I'm not asking you to forget everything ma.
+
+I'm only asking for one chance ma.
+
+One chance to prove that I can become the person you deserve ma.
+
+Please... ma.
+
+Can we start again ma?"></div>
+            <button class="primary-btn" data-next="final" type="button">❤️ Can We Start Again?</button>
+          </div>
+        </section>
+
+        <section class="page" id="final">
+          <div class="card final-card">
+            <div class="heartbeat" aria-hidden="true">
+              <div class="heart">❤</div>
+            </div>
+            <div class="final-text">
+              <p>No matter how long it takes...</p>
+              <p>I'll always hope for us.</p>
+              <p>I love you.</p>
+              <p class="signature">— Your's.H ❤️</p>
+            </div>
+            <button class="primary-btn" id="restartBtn" type="button">Start Again 💖</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="forgiveness-meter" aria-label="forgiveness meter">
+      <span class="meter-label">Forgiveness Meter</span>
+      <div class="meter-track">
+        <div class="meter-fill" id="meterFill"></div>
+      </div>
+      <span class="meter-value" id="meterValueText">12%</span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
